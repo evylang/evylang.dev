@@ -2,7 +2,7 @@
 .DEFAULT_GOAL := help
 
 # --- Global -------------------------------------------------------------------
-MODS = e evy pratt
+MODS = e evy markdown pratt
 
 all: lint run ## Build, test, check coverage and lint
 	@if [ -e .git/rebase-merge ]; then git --no-pager log -1 --pretty='%h %s'; fi
